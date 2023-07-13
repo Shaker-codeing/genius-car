@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
+import Social from '../Shared/Social/Social';
 
 function Login() {
 
@@ -70,6 +71,7 @@ function Login() {
             <p className='mt-2'>You are New? <span> <Button onClick={handleNavigate} className='text-decoration-none' variant="link">Please Register</Button></span></p>
 
             <p className=''>Forget password <span> <Button onClick={handleCode} className='text-decoration-none' variant="link">Reset password</Button></span></p>
+            <Social></Social>
         </div>
     );
 }
